@@ -8,7 +8,7 @@ Email: turjotasin@gmail.com
 import string
 
 
-"""QUESTION 1"""
+#QUESTION 1"""
 class Star_Cinema:
     def __init__(self):
         self.hall_list = []
@@ -16,7 +16,7 @@ class Star_Cinema:
     def entry_hall(self, hall_no):
         self.hall_list.append(hall_no)
 
-"""QUESTION 2"""
+#QUESTION 2"""
 class Hall(Star_Cinema):
     def __init__(self, rows, cols, hall_no):
         self.rows = int(rows)
@@ -28,7 +28,7 @@ class Hall(Star_Cinema):
         super().__init__()
         self.entry_hall(self.hall_no)
 
-    """QUESTION 3"""
+    #QUESTION 3"""
     def entry_show(self, id, movie_name, time):
         self.id = int(id)
         add = [id, movie_name, time]
@@ -46,10 +46,10 @@ class Hall(Star_Cinema):
 
         self.show_id. append(self.show_list[self.id-1][0])
 
-    """QUESTION 4"""
+    #QUESTION 4"""
     def book_seats(self, customer_name, phone_number, id, row, column):
 
-    """QUESTION 9"""
+        #QUESTION 9"""
         self.__customer_name = customer_name
         self.__phone_number = phone_number
         self.id = int(id)
@@ -58,14 +58,14 @@ class Hall(Star_Cinema):
         b = int(column)
         self.seats[self.id-1][a][b] = 'X'
 
-    """QUESTION 5"""
+#QUESTION 5"""
     def view_show_list(self):
         for item in self.show_list:
             for values in item:
                 print(values.ljust(20), end= '  ')
             print()
 
-    """QUESTION 6"""
+#QUESTION 6"""
     def view_available_seats(self, id):
         print('PRINTING THE AVAILABLE SEATS'.center(65))
         print('______________________________________________________________________'.center(50))
@@ -85,7 +85,7 @@ a.entry_show(id= '1', movie_name= 'The Platform', time = 'Nov 15, 2022')
 a.entry_show(id= '2', movie_name= 'Siccin', time = 'Nov 12, 2023')
 a.entry_show(id= '3', movie_name= 'The Green Mile', time = 'Nov 14, 2023')
 
-"""QUESTION 7"""
+#"QUESTION 7"""
 while(True):
     case = int(input('1. VIEW ALL SHOWS TODAY \n'
                      '2. VIEW ALL SEATS \n'
